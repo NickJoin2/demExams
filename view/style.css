@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+
+.footer {
+    flex: 0 0 auto;
+}
+
+
+input[aria-invalid="true"] {
+    border-color: red;
+    background-color: #ffe6e6; /* Легкий красный фон */
+}
