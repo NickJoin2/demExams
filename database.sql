@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Окт 01 2024 г., 22:20
+-- Время создания: Окт 02 2024 г., 23:23
 -- Версия сервера: 10.4.28-MariaDB
 -- Версия PHP: 8.2.4
 
@@ -193,9 +193,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `login`, `email`, `password`, `role_id`) VALUES
-(17, 'victoria20', 'cheril@gmail.com', '$2y$10$sDhkArtCBXQJY/nDEfs2AukWgTrgSovwegCdgZMzgsqCNaADQAmom', 2),
+(17, 'victoria20', 'cheril@gmail.com', '$2y$10$sDhkArtCBXQJY/nDEfs2AukWgTrgSovwegCdgZMzgsqCNaADQAmom', 4),
 (18, 'victoria2', 'aliment@gmail.com', '$2y$10$XnInc2O4lYv3AMtGoqxUs.bF./ESzgevj3NsGgpXhFixqf9NSXRkO', 3),
-(19, 'victoria23', 'victoria@gmail.com', '$2y$10$yRvgSJf9nkmjc2WMnnM22OKZjqIav5LdLyoxJ6uMpAqsdt06WdLN6', 3);
+(19, 'victoria23', 'victoria@gmail.com', '$2y$10$yRvgSJf9nkmjc2WMnnM22OKZjqIav5LdLyoxJ6uMpAqsdt06WdLN6', 3),
+(20, 'leps', 'leps@gmail.com', '$2y$10$AgTIKaZFJ85ZOJQEf2KI2uU79wHbsWBvbg6jWQzkGEW.N5JuKEZvu', 3);
 
 -- --------------------------------------------------------
 
@@ -221,7 +222,8 @@ CREATE TABLE `user_info` (
 INSERT INTO `user_info` (`id`, `first_name`, `last_name`, `middle_name`, `phone_clean`, `phone_mask`, `user_id`, `photo_path`) VALUES
 (16, 'Виктория', 'Соколова', 'Вячеславовна', '73242222222', '+7 (324) - 222 - 22 - 22', 17, '_66fc226a7b30b.'),
 (17, 'Виктория', 'Соколова', 'Вячеславовна', '73242222225', '+7 (324) - 222 - 22 - 25', 18, '17_66fc59796da80.jpg'),
-(18, 'Виктория', 'Соколова', 'Вячеславовна', '73242222221', '+7 (324) - 222 - 22 - 1', 19, '10_66f9b59476c2f.jpg');
+(18, 'Виктория', 'Виктория', 'Вячеславовна', '7324222221', '+7 (324) - 222 - 22 - 1', 19, '5467813218773756333_66fdaffc7a11e.jpg'),
+(19, 'Григорий', 'Лепс', 'Валерьевич', '71234564321', '+7 (123) - 456 - 43 - 21', 20, 'Снимок экрана 2024-08-28 222245_66fd4235e8633.png');
 
 -- --------------------------------------------------------
 
@@ -344,13 +346,13 @@ ALTER TABLE `status`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT для таблицы `user_info`
 --
 ALTER TABLE `user_info`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT для таблицы `video`
